@@ -1,5 +1,11 @@
 <?php
 
+require_once( get_stylesheet_directory() . '/includes/Mobile_Detect.php' );
+require_once( get_stylesheet_directory() . '/includes/pfd-common-functions.php' );
+require_once( get_stylesheet_directory() . '/includes/pfd-theme-functions.php' );
+require_once( get_stylesheet_directory() . '/includes/pfd-integration-functions.php' );
+
+
 function pfd_enqueue_styles() {
 
     $parent_style = 'parent-style';
