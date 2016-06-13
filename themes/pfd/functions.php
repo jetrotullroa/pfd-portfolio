@@ -18,6 +18,12 @@ function pfd_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'pfd_enqueue_styles' );
 
+global $detect;
+
+if ( class_exists( 'Mobile_Detect' ) ):
+    $detect = new Mobile_Detect;
+endif;
+
 
 
 ?>
